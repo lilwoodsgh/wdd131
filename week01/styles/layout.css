@@ -1,0 +1,85 @@
+footer{
+    background-color: #161616;
+    color: #fff6f6;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/4;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  h1 {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Auto for logo width, 1fr for navigation */
+    align-items: center; /* Center vertically */
+    background-color: #3f3f3f;
+    padding: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between; /* Items will be evenly distributed */
+  align-items: center; /* Center items vertically */
+  background-color: #050505; /* Set background color */
+  padding: 20px; /* Add padding for spacing */
+  box-shadow: 0 2px 0px rgba(250, 247, 247, 0.1); 
+}
+.navigation {
+    display: flex; /* Use flexbox for navigation links */
+  }
+  
+  .navigation a {
+    margin-right: 20px; /* Add space between navigation links */
+    text-decoration: none; /* Remove default underline */
+    color: #fffdfd; /* Set link color */
+    font-weight: bold; /* Apply bold font weight */
+    transition: color 0.3s; /* Add smooth color transition */
+  }
+  
+  .navigation a:hover {
+    color: #f9af01c2; /* Change link color on hover */
+  }
+  .main {
+    background-color: #fffbfb; /* Set background color */
+    padding: 20px; /* Add padding for spacing */
+    border-bottom: 1px solid #ccc; /* Add border for separation */
+    grid-column: 1/2;
+    flex: 1;
+  }
+
+  .aside {
+    background-color: #d8d8d8; /* Set background color */
+    padding: 40px; /* Add padding for spacing */
+    border-bottom: 1px solid #ccc; /* Add border for separation */
+    grid-column: 3/4;
+  
+  }
+main{
+    background: #d8d8d8;
+    grid-column: 2/3;
+}
+
+.main, .aside {
+    padding: 1rem;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90em;
+    margin: 0 auto;
+}
+
+header, main, footer {
+    grid-column: 1 / -1;
+}
+
+.container {
+    display: flex; /* Add this line to arrange items horizontally */
+}
+
+
+
+
