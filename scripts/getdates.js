@@ -1,7 +1,6 @@
-const currentYear = new Date().getFullYear();
-document.getElementById("copyright").innerText = 'Copyright ${currentYear}';
-
-const lastModifiedDate = new Date(document.lastModified);
-const formattedDate = '${lastModifiedDate.getFullYear()} - ${lastModifiedDate.getMonth() + 1} - ${lastModifiedDate.getDate()}';
-
-document.getElementById("lastModified").innerText = 'lastModified: ${formattedDate}';
+document.addEventListener("DOMContentLoaded", function() {
+    var lastModifiedDate = document.lastModified;
+    var footerElement = document.createElement("footer");
+    footerElement.textContent = "Last Modified: " + lastModifiedDate;
+    document.body.appendChild(footerElement);
+});
