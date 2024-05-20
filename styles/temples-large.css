@@ -1,0 +1,54 @@
+
+/* Larger view styles */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a grid with three columns */
+    gap: 10px; /* Add gap between grid items */
+}
+
+.temple {
+    margin-bottom: 10px;
+}
+
+h1{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.temple img {
+    width: 100%; /* Ensure images fill their container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.navigation a {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between menu items */
+     text-decoration: none;
+     color: #fff;
+}
+
+.navigation a:last-child {
+    margin-right: 0; /* Remove margin from last menu item */
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
