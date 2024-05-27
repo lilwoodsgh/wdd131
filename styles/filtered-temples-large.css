@@ -1,0 +1,69 @@
+
+/* Basic styling for the temple cards */
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.temple-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.nav-menu {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu button {
+    margin-right: 8px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+    .temple-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .temple-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .temple-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
