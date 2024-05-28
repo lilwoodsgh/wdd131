@@ -133,9 +133,17 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             displayTemples(filteredTemples);
         }
-    
+     // Add event listeners to navigation links
+     document.querySelectorAll('.navigation a').forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const filter = event.target.getAttribute('data-filter');
+            filterTemples(filter);
+            document.getElementById('main-title').textContent = event.target.textContent;
+        });
+    });
         // Initial display of all temples
         displayTemples(temples);
-        
-    });
+});
+
     
