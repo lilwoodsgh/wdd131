@@ -1,0 +1,57 @@
+/* styles/form-large.css */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .rating label {
+        font-size: 2em;
+        padding: 0 10px;
+    }
+
+    input, select, textarea, button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .rating label {
+        font-size: 1.5em;
+        padding: 0 5px;
+    }
+
+    input, select, textarea, button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
