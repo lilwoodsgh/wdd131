@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Patamiah Elorm Godwin">
+    <meta name="author" content="Godwin Elorm Patamiah">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/siteplan-large.css">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Site Plan for Beulahland Christian School</h1>
+
+        <!-- Site Name Section -->
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Beulahland Christian School</strong></p>
+            <p>This name represents a vibrant and welcoming school that aims to provide quality education and foster a nurturing environment for students. The site will be the main source of information for students, parents, and staff.</p>
+            <p>Optional domain availability: <i>@bcsghana.org</i></p>
+        </section>
+
+        <!-- Site Purpose Section -->
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The site serves as a central hub for all school-related information, including announcements, event calendars, staff directories, student resources, and parent information. It aims to enhance communication within the school community.</p>
+        </section>
+
+        <!-- Scenarios Section -->
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>How can I access the school calendar for upcoming events?</li>
+                <li>Where can I find contact information for my child's teacher?</li>
+            </ul>
+        </section>
+
+        <!-- Color Schema Section -->
+        <section>
+            <h2>Color Schema</h2>
+            <ul>
+                <li><strong> Brick Red  (#CB4154):</strong> Used for headings, navigation bars, and accents to represent trust and authority.</li>
+                <li><strong>Light Yellow (#FFF9C4):</strong> Used for background and sections to give a cheerful and bright feel.</li>
+            </ul>
+        </section>
+
+        <!-- Typography Section -->
+        <section>
+            <h2>Typography</h2>
+            <ul>
+                <li><strong>Heading Font:</strong> 'Lato', sans-serif - Used for all headings.</li>
+                <li><strong>Body Font:</strong> 'Roboto', sans-serif - Used for body text and paragraphs.</li>
+            </ul>
+        </section>
+
+        <!-- Wireframe Section -->
+        <section>
+            <h2>Wireframe</h2>
+            <h3>Mobile View</h3>
+            <img src="wireframes/mobile-wireframe.png" alt="Mobile Wireframe">
+            <h3>Desktop View</h3>
+            <img src="wireframes/desktop-wireframe.png" alt="Desktop Wireframe">
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 | Patamiah Elorm Godwin | Accra-Ghana</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('lastModified').textContent = document.lastModified;
+        });
+    </script>
+</body>
+</html>
