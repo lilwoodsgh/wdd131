@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: rgb(44, 34, 34);
+  position: relative;
+}
+
+header .logo {
+  height: 50px;
+}
+
+header .navigation {
+  display: none;
+}
+
+header .navigation a {
+  color: rgb(9, 7, 7);
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.hamburger-menu {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Image Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+/* Show navigation and hide hamburger menu on large screens */
+@media (min-width: 768px) {
+  header .navigation {
+      display: block;
+  }
+  .hamburger-menu {
+      display: none;
+  }
+}
+
+/* Main Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.column {
+  background: white;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  color: black;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.about, .history, .founders {
+  padding: 20px;
+}
+
+.history h2, .founders h2 {
+  font-size: 2em;
+}
+
+.history .hero article {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.history .hero article img {
+  width: 100px;
+  height: auto;
+}
+
+.founders-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.founders-gallery figure {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.founders-gallery img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .main-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .founders-gallery figure {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Navigation Active State */
+.navigation.active {
+  display: block;
+}

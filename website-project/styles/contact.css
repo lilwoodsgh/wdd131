@@ -1,0 +1,151 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(44, 34, 34);
+    position: relative;
+  }
+  
+  header .logo {
+    height: 50px;
+  }
+  
+  header .navigation {
+    display: none;
+  }
+  
+  header .navigation a {
+    color: rgb(9, 7, 7);
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .hamburger-menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  /* Image Slider */
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+footer{
+  background-color: #040505;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  color: #f9f8f8;
+}
+
+
+.head {
+  height: 150px;
+  padding: 8px 8px 8px 8px;
+  background: #f9f8f8;
+  border-radius: 3px 3px 3px 3px;
+  text-align: center;
+}
+address{
+  border-top: 3px solid white;
+  height: 150px;
+  width: 20%;
+  padding: 8px 8px 8px 8px;
+  background: #fffefe;
+  text-align: justify;
+  border-radius: 3px 3px 3px 3px;
+  float: left;
+  margin-top: 10%;
+  margin-left: 10%;
+  text-align: center;
+}
+iframe{
+  border-top: 3px solid white;
+  width: 60%;
+  padding: 8px 8px 8px 8px;
+  border-radius: 3px 3px 3px 3px; 
+}
+
+/* Styles for the main container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Styles for the form inputs */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for the radio buttons */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Styles for the checkbox */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Styles for the submit button */
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
